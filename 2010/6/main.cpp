@@ -12,7 +12,7 @@ int main() {
 	cout << "2D Shape: " << t2.calculate() << endl;
 	cout << "3D Shape: " << t3.calculate() << endl;
 
-	ptr = &t2;				// 使用基类指针实现多态
+	ptr = &t2;			// 使用基类指针，实现多态
 	cout << "2D Shape: " << ptr->calculate() << endl;
 	ptr = &t3;
 	cout << "3D Shape: " << ptr->calculate() << endl;
