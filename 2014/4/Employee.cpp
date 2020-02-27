@@ -24,7 +24,7 @@ void Employee::setSalary(int s) {
 	salary = s;
 }
 void Employee::extentHireDay(int y) {
-	if (deadline.getYear() + y - birthday.getYear() > 60)		// 年龄超过60
+	if (deadline.getYear() + y - birthday.getYear() > 60)				// 年龄超过60
 		cerr << "The age is too old." << endl;
 	else {
 		deadline.setDate(deadline.getYear() + y, deadline.getMonth(),	// 年龄合格
