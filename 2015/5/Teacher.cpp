@@ -28,9 +28,8 @@ bool Teacher::isRetire(int year) const {
 
 // 此函数只用于在满足isRetire的条件下的进一步判断
 bool Teacher::isKeepHire(int year) const {
-	if (isRetire(year) && sex == "female") {			// 如果满足退休年龄且是女性才需要合格第一条件
-		return (year - hireDate.getYear() < 35);		// 判断工龄是否达到35岁，未达到则续聘
-	}												
+	if (isRetire(year) && sex == "female")				// 如果满足退休年龄且是女性才需要合格第一条件
+		return (year - hireDate.getYear() < 35);		// 判断工龄是否达到35岁，未达到则续聘												
 	else
 		return false;
 }
