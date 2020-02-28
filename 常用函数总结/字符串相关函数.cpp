@@ -68,3 +68,5 @@ size_t copy(char* s, size_t count, size_t pos);	// 在当前string字符串中pos位置至
 /***** c语言cstring中的部分函数 *****/
 char* strtok(char* str, const char* delim);		// 在str中按照delim分割字符串，如果没有可以分割的字符串则返回nullptr
 // 后续继续使用该函数分割需要将str设置为nullptr，同时，strtok会修改原来的字符串，将其中的delim替换为'\0'
+
+/***** c语言cstring中的部分函数 *****/
