@@ -22,7 +22,7 @@ int main() {
 		input >> year;
 		input.ignore();
 
-		cout << monthStr[month] << " " << setw(2) 
+		cout << monthStr[month] << " " << setw(2)	// 注意这个要填充字符0
 			<< setfill('0') << day << "," << year << endl;
 	}
 
