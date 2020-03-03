@@ -10,7 +10,9 @@ public:
 	~SelfString();
 
 private:
-	static const int MAXN = 1000;		// 设置当前类可以存储的最大字符串长度
+	// 设置当前类可以存储的最大字符串长度（类的静态常量是整数类型或枚举类型，可以直接在类定义中
+	// 指定常量值，否则应该在类定义之外定义, 而类静态变量只能在类定义外定义）
+	static const int MAXN = 1000;
 	char* dataStr;
 	int length;
 };
