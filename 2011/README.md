@@ -11,9 +11,9 @@
 ## [Problem 4](4/4.cpp)
 > 编写两个函数SortOne和SortTwo分别对字符串数组实现插入排序和选择排序。
 ## Problem 5 [main函数](5/5.cpp)|[Array.h](5/Array.h)
-> 自定义数组Array的operator()访问，对于一个数组 Array 类的 chess 对象通过调用运算符重载函数()，实现 chess(row,column)代替 chess[row][column]。
-> 请完成:
-> （1）Array 类的基本定义，包括构造函数、析构函数、拷贝构造函数和基本数据成员;
+> 自定义数组Array的operator()访问，对于一个数组 Array 类的 chess 对象通过调用运算符重载函数()，实现 chess(row,column)代替 chess[row][column]。</br>
+> 请完成:</br>
+> （1）Array 类的基本定义，包括构造函数、析构函数、拷贝构造函数和基本数据成员;</br>
 > （2）运算符重载函数()的定义。
 ## Problem 6
 ## [main函数](6/6.cpp)|[Shape.h](6/Shape.h)|[Point.h](6/Point.h)|[Circle.h](6/Circle.h)|[Rec.h](6/Rec.h)|[Tri.h](6/Tri.h)

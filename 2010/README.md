@@ -11,7 +11,7 @@
 
 ## Problem 4 
 ## [main函数](4/4.cpp)|[Polynomial.h](4/Polynomial.h)|[Polynomial.cpp](4/Polynomial.cpp)
-> 设计一个多项式类 Polynomial(包括构造函数、复制构造函数、析构函数、赋值函数、 实现两个多项式相加)
+> 设计一个多项式类 Polynomial(包括构造函数、复制构造函数、析构函数、赋值函数、 实现两个多项式相加)</br>
 > 这里为了简化问题，我们将所有的多项式都统一看成：
 ```
 p = a0 + a1*x + a2*x^2 + a3*x^3 + ……… + an*x^n
