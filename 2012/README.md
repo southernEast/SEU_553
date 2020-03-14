@@ -27,9 +27,10 @@ only silently ask myself in mind Next happiness,when will come?
 > 结果为："a"出现1次，"and"出现3次，"arranged"出现1次等。
 ## Problem 4 
 ## [main函数](4/4.cpp)|[Name.h](4/Name.h)|[Person.h](4/Person.h)
-> Person类包含3个数据成员</br>
-> 已知:Person 类包含 3 个数据成员(name，nationality 和 sex)和三个成员函数(构造函数，printName 函数和 printNationality 函数)，其中name的数据类型为Name类。Name 类包含三个数据成员(first，middle和last) 和两个成员函数(构造函数和printName函数)。</br>
-> 定义Person类和Name 类，并编写程序测试这两个类的所有接口。
+> Person类包含3个数据成员，已知:</br>
+> 1. Person 类包含 3 个数据成员(name，nationality 和 sex)和三个成员函数(构造函数，printName 函数和 printNationality 函数);</br>
+> 2. 其中name的数据类型为Name类。Name 类包含三个数据成员(first，middle和last) 和两个成员函数(构造函数和printName函数)；</br>
+> 3. 定义Person类和Name 类，并编写程序测试这两个类的所有接口。
 
 
 题目参考自：https://blog.csdn.net/qq_32925781/article/details/79399352
