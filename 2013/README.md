@@ -23,7 +23,8 @@
 
 ## Problem 6 [main](6/main.cpp)|[Name.h](6/Name.h)|[Person.h](6/Person.h)
 > Person类（同2012年题4）</br>
-> 已知:Person 类包含 3 个数据成员(name，nationality 和 sex)和三个成员函数(构造函数，printName 函数和 printNationality 函数)，其中name的数据类型为Name类。Name 类包含三个数据成员(first，middle和last) 和两个成员函数(构造函数和printName函数)。</br>
-> 定义Person类和Name 类，并编写程序测试这两个类的所有接口。
+> 1. Person 类包含 3 个数据成员（name，nationality 和 sex）和三个成员函数（构造函数，printName 函数和 printNationality 函数）;</br>
+> 2. 其中name的数据类型为Name类。Name 类包含三个数据成员（first，middle和last）和两个成员函数（构造函数和printName函数）;</br>
+> 3. 定义Person类和Name 类，并编写程序测试这两个类的所有接口。
 
 题目参考自：https://blog.csdn.net/qq_32925781/article/details/79410775
