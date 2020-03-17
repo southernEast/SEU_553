@@ -14,7 +14,7 @@ int findMin(T a[], int last) {
 
 int main() {
 	int a[10] = { 2, 1, 0, 9, 8, 4, 6, -5 };
-	int pos = findMin(a, 9);
+	int pos = findMin(a, sizeof(a) / sizeof(a[0]) - 1);
 	cout << a[pos];
 
 	return 0;
