@@ -11,6 +11,7 @@ public:
 	}
 	int getX() const { return x; }
 	int getY() const { return y; }
+	virtual ~TwoDShape() = default;
 private:
 	int x, y;
 };

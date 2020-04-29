@@ -16,7 +16,7 @@
 ```
 p = a0 + a1*x + a2*x^2 + a3*x^3 + ……… + an*x^n
 ```
-> 拓展问题：实现多项式的+、-、*、+=、-=和*=运算。 答案见：[此处](4/extend.cpp)
+> 拓展问题：实现多项式的+、-、*、+=、-=、*=运算。 答案见：[此处](4/extend.cpp)
 
 ## Problem 5 
 ## [main函数](5/5.cpp)|[Brake.h](5/Brake.h)|[Car.h](5/Car.h)|[SteeringWheel.h](5/SteeringWheel.h)|[Vehicle.h](5/Vehicle.h)
