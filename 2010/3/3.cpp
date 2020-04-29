@@ -6,8 +6,8 @@
 using namespace std;
 
 // 方法一，针对分隔符下手，处理不同的分隔符
-void getDataSimple(ifstream& in) {			// 如果输入是简单的固定长度的数字序列
-	string str;								// 可以使用这样的方法
+void getDataSimple(ifstream& in) {	// 如果输入是简单的固定长度的数字序列
+	string str;							
 	while (in >> str) {
 		cout << str.substr(1, 3) << "|"
 			<< str.substr(6, 11) << "|"
@@ -15,24 +15,24 @@ void getDataSimple(ifstream& in) {			// 如果输入是简单的固定长度的�
 			<< str.substr(24, 6) << endl;
 	}
 }
-void getDataComplicated(ifstream& in) {		// 如果是不定长度的数字序列
+void getDataComplicated(ifstream& in) {	// 如果是不定长度的数字序列
 	string str;
-	char tag[] = "()()||()";				// 分隔符
+	char tag[] = "()()||()";	// 分隔符
 
 	while (in >> str) {
 		string::iterator it = str.begin();	// 遍历迭代器
-		int tagNum = 0;						// 标记分隔符位置
-		bool frontIsChar = false;			// 上一次访问是否是字符
+		int tagNum = 0;		// 标记分隔符位置
+		bool frontIsChar = false;	// 上一次访问是否是字符
 
 		while (it != str.end()) {
 			if (*it == tag[tagNum]) {
 				if (frontIsChar && it != str.end() - 1)	// 如果前面访问是字符且不是最后一组数字序列
-					cout << '|';			// 则输出新的分隔符
+					cout << '|';	// 输出新的分隔符
 				++tagNum;
 				frontIsChar = false;
 			}
 			else {
-				cout << *it;				// 输出字符序列
+				cout << *it;	// 输出数字序列
 				frontIsChar = true;
 			}
 			++it;
