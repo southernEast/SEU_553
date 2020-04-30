@@ -9,16 +9,16 @@ double myExp(double x) {
 	
 	while (fabs(temp) > acc) {		// 使用fabs 指数可以为负
 		ans += temp;
-		temp = temp * x / (++n);
+		temp *= x / (++n);
 	}
 
 	return ans;
 }
 
 int main() {
-	double x = 10;
+	double x;
+	cin >> x;
 	cout << fixed << setprecision(10) << myExp(x) << endl;
-	
 
 	return 0;
 }
