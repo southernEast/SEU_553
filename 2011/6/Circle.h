@@ -1,4 +1,4 @@
-#ifndef _CIRCLE_H_
+ï»¿#ifndef _CIRCLE_H_
 #define _CIRCLE_H_
 
 #include "Shape.h"
@@ -9,7 +9,7 @@ public:
 	Circle(double x, double y, double r) : p(x, y), radius(r) {}
 	Circle(Point p, double radius) : p(p), radius(radius) {}
 	virtual double calculate() const override {
-		return PI * radius * radius;		// Ô²ĞÎµÄÃæ»ı¹«Ê½Îª PI * r^2
+		return PI * radius * radius;		// åœ†å½¢çš„é¢ç§¯å…¬å¼ä¸º PI * r^2
 	}
 private:
 	const double PI = 3.14159;
