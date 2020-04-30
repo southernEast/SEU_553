@@ -9,7 +9,7 @@ public:
 	Circle(double x, double y, double r) : p(x, y), radius(r) {}
 	Circle(Point p, double radius) : p(p), radius(radius) {}
 	virtual double calculate() const override {
-		return PI * radius * radius;		// 圆形面积为 PI * r^2
+		return PI * radius * radius;		// 圆形的面积公式为 PI * r^2
 	}
 private:
 	const double PI = 3.14159;
