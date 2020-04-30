@@ -17,6 +17,6 @@
 > （2）运算符重载函数()的定义。
 ## Problem 6
 ## [main函数](6/6.cpp)|[Shape.h](6/Shape.h)|[Point.h](6/Point.h)|[Circle.h](6/Circle.h)|[Rec.h](6/Rec.h)|[Tri.h](6/Tri.h)
-> 定义一个具有多态性的基类Shape，派生出三个类：圆 Circle 类(坐标点和半径)，矩形 Rec 类(两点不同坐标)，三角形 Tri 类(三个不同坐标)，每个类中至少有一个计算面积的函数。编写程序，从文件 file.txt 中读取数据来创建各类的对象，并放在 Shape 指针向量中，最后循环处理每个对象并输出面积。
+> 定义一个具有多态性的基类Shape，派生出三个类：圆 Circle 类(圆心坐标和半径)，矩形 Rec 类(对角线两点不同坐标)，三角形 Tri 类(三个不同坐标)，每个类中至少有一个计算面积的函数。编写程序，从文件 [file.txt](6/file.txt) 中读取数据来创建各类的对象，并放在 Shape 指针向量中，最后循环处理每个对象并输出面积。
 
 题目参考自：https://blog.csdn.net/qq_32925781/article/details/79389350

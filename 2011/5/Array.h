@@ -27,6 +27,7 @@ public:
 	~Array();
 	Array(const Array<T>& a);
 	T& operator()(int r, int c);
+	const T& operator()(int r, int c) const;	// 供const Array对象使用
 private:
 	T* ptr;
 	int row, col;
@@ -57,6 +58,15 @@ Array<T>::Array(const Array<T>& a) {
 }
 template<typename T>
 T& Array<T>::operator()(int r, int c) {
+	if (r >= row || c >= col) {
+		std::cerr << "Out of range" << std::endl;
+		exit(EXIT_FAILURE);
+	}
+	return *(ptr + r * col + c);		// 注意是乘col而不是row
+}
+
+template<typename T>
+const T& Array<T>::operator()(int r, int c) const {
 	if (r >= row || c >= col) {
 		std::cerr << "Out of range" << std::endl;
 		exit(EXIT_FAILURE);

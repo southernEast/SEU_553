@@ -6,13 +6,10 @@
 
 class Circle : public Shape {
 public:
-	Circle(double x, double y, double r) : radius(r) {
-		p.x = x;
-		p.y = y;
-	}
+	Circle(double x, double y, double r) : p(x, y), radius(r) {}
 	Circle(Point p, double radius) : p(p), radius(radius) {}
 	virtual double calculate() const override {
-		return PI * radius * radius;		// 圆形面积为PI*r^2
+		return PI * radius * radius;		// 圆形面积为 PI * r^2
 	}
 private:
 	const double PI = 3.14159;
