@@ -24,14 +24,15 @@
 ```
 Welcome to C++ world ! Happy birthday to you .This is the weather report across the world for tomorrow , talk about it in pairs following the model below.
 ```
-> 结果为 "welcome" 出现 1 次，"to" 出现 2 次，"C++" 出现 1 次等。
+> 结果为 "welcome" 出现 1 次，"to" 出现 2 次，"C++" 出现 1 次等。样例输入输出文件见：[文件](3/样例1.txt)
 
 ```
 Life is full of confusing and disordering Particular time,a particular location,Do the arranged thing of ten million time in the brain,
 Step by step ,the life is hard to avoid delicacy and stiffness No enthusiasm forever,No unexpected happening of surprising and pleasing So,
 only silently ask myself in mind Next happiness,when will come?
 ```
-> 结果为："a"出现1次，"and"出现3次，"arranged"出现1次等。
+> 结果为："a"出现1次，"and"出现3次，"arranged"出现1次等。样例输入输出文件见：[文件](3/样例2.txt)
+
 ## Problem 4 
 ## [main函数](4/4.cpp)|[Name.h](4/Name.h)|[Person.h](4/Person.h)
 > Person类包含3个数据成员，已知:</br>
