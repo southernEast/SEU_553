@@ -24,7 +24,7 @@ int main() {
 	int n1, n2, temp;
 	cin >> n1 >> n2;
 
-	temp = gcd(n1, n2);			// 求得最大公约数
+	temp = gcd(n1, n2);		// 求得最大公约数
 	cout << (n1 / temp * n2);	// 先除以最大公约数再乘，避免溢出
 
 	return 0;
