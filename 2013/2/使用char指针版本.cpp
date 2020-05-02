@@ -17,7 +17,7 @@ void encrypt(char* str) {
 void decrypt(char* str) {
 	int len = strlen(str);
 	for (int i = 0; i < len; ++i) {
-		if (islower(str[i]))
+		if (islower(str[i]))	// 减法要注意序号为负的情况，故先加上一个基数再运算
 			str[i] = (str[i] - 'a' + 26 - 1) % 26 + 'a';
 		else
 			str[i] = (str[i] - 'A' + 26 - 1) % 26 + 'A';
