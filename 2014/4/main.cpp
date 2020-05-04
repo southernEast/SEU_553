@@ -8,7 +8,7 @@ int main() {
 	Date hire(1995, 3, 5);
 	Date limit(2029, 9, 5);
 
-	Employee e1( "维尼", "233666", "12323", birth, hire, limit, 10000);
+	Employee e1("维尼", "233666", "12323", birth, hire, limit, 10000);
 	e1.display();
 
 	e1.extentHireDay(1);

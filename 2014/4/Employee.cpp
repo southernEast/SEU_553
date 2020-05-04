@@ -5,15 +5,9 @@
 using namespace std;
 
 Employee::Employee(string name, string number, string idNumber,
-	Date birthday, Date hireDay, Date deadline, int salary) {
-	this->name = name;
-	this->number = number;
-	this->idNumber = idNumber;
-	setBirthDay(birthday);
-	this->hireDay = hireDay;
-	setDeadline(deadline);
-	setSalary(salary);
-}
+	Date birthday, Date hireDay, Date deadline, int salary) :
+	name(name), number(number), idNumber(idNumber), birthday(birthday),
+	hireDay(hireDay), deadline(deadline), salary(salary) {}
 void Employee::setBirthDay(Date d) {
 	birthday = d;
 }
@@ -25,7 +19,7 @@ void Employee::setSalary(int s) {
 }
 void Employee::extentHireDay(int y) {
 	if (deadline.getYear() + y - birthday.getYear() > 60)			
-		cerr << "The age is too old." << endl;
+		cerr << "Can't hire! This employee will be over 60 years old!" << endl;
 	else {
 		deadline.setDate(deadline.getYear() + y, deadline.getMonth(),
 			deadline.getDay());
