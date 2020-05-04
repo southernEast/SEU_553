@@ -21,7 +21,7 @@ void swap(int a[], int m, int n) {
 	//myReverse(a, a + m);		// 不使用STL的情况下使用
 	//myReverse(a + m, a + m + n);
 	//myReverse(a, a + m + n);
-	reverse(a, a + m);			// 前面m个元素翻转
+	reverse(a, a + m);		// 前面m个元素翻转
 	reverse(a + m, a + m + n);	// 后面n个元素翻转
 	reverse(a, a + m + n);		// 整体翻转
 }
