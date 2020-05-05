@@ -5,8 +5,8 @@ using namespace std;
 
 int main() {
     Teacher t1(123, "Tom", "male", Date(1960, 10, 10), Date(1990, 5, 3));
-    Teacher t2(134, "Jack", "male", Date(1965,10, 10), Date(1995, 5, 3));
-    Teacher t3(211, "Lucy", "female", Date(1955, 10, 10),Date(1982, 5, 3));
+    Teacher t2(134, "Jack", "male", Date(1965, 10, 10), Date(1995, 5, 3));
+    Teacher t3(211, "Lucy", "female", Date(1955, 10, 10), Date(1982, 5, 3));
     Teacher t4(246, "Wendy", "female", Date(1955, 7, 9), Date(1980, 7, 31));
     Teacher* t[4] = { &t1, &t2, &t3, &t4 };     // 使用数组方便遍历
 
@@ -21,5 +21,5 @@ int main() {
             t[i]->printInfo();
     }
 
-	return 0;
+    return 0;
 }

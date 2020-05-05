@@ -3,19 +3,10 @@
 #include <iostream>
 using namespace std;
 
-Teacher::Teacher(int number, string name, string sex, Date birthday, Date hireDate) {
-	this->number = number;
-	this->name = name;
-	this->sex = sex;
-	this->birthday = birthday;
-	this->hireDate = hireDate;
-}
-Teacher::Teacher(const Teacher& t) {
-	number = t.number;
-	name = t.name;
-	birthday = t.birthday;
-	hireDate = t.hireDate;
-}
+Teacher::Teacher(int number, string name, string sex, Date birthday, Date hireDate) :
+	number(number), name(name), sex(sex), birthday(birthday), hireDate(hireDate) {}
+Teacher::Teacher(const Teacher& t) : 
+	number(t.number), name(t.name), sex(t.sex), birthday(t.birthday), hireDate(hireDate) {}
 
 // 以下两个函数有第二种设计方法，即不返回bool类型，而直接在函数内
 // 将需要输出的信息进行输出
@@ -36,7 +27,4 @@ bool Teacher::isKeepHire(int year) const {
 void Teacher::printInfo() const {
 	cout << "name:" << name << endl
 		<< "number:" << number << endl << endl;
-}
-string Teacher::getName() const {
-	return name;
 }

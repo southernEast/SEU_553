@@ -7,12 +7,11 @@
 class Teacher {
 public:
 	Teacher(int number = 0, std::string name = "", std::string sex = "male",
-		Date birthday = Date(1900, 1, 1), Date hireDate = Date(2000, 1, 1));
+		Date birthday = Date(1900, 1, 1), Date hireDate = Date(2020, 5, 17));
 	Teacher(const Teacher& t);
 	bool isRetire(int year) const;
 	bool isKeepHire(int year) const;
 	void printInfo() const;
-	std::string getName() const;
 
 private:
 	int number;

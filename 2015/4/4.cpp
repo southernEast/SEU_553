@@ -3,22 +3,19 @@
 #include <string>
 using namespace std;
 
-// 解法一：不能延长原字符串的做法，保留初始字符串长度
+// 解法一：finStr与replaceStr字符串长度相同的替换
 void findRepStr1(char str[], const char findStr[], const char replaceStr[]) {
-	int len = strlen(replaceStr), originLen = strlen(str);
+	int len = strlen(replaceStr), findLen = strlen(findStr);
 	char* pos = strstr(str, findStr);
 	while (pos) {
-		for (int i = 0; i < len; ++i) {			// 替换字符串
-			if (pos - str + i < originLen) {	// 在不超过原始长度的情况下替换
-				str[pos - str + i] = replaceStr[i];
-			}
-		}
+		for (int i = 0; i < findLen; ++i)
+			*(pos + i) = replaceStr[i];
 		pos = strstr(str, findStr);
 	}
 	cout << str << endl;
 }
 
-// 解法二：无条件替换字符串，即使超出范围
+// 解法二：findStr与replaceStr字符串长度不同的替换
 void findRepStr2(char str[], const char findStr[], const char replaceStr[]) {
 	string s1(str), s2(findStr), s3(replaceStr);
 
