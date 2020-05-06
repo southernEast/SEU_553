@@ -28,7 +28,16 @@ void split2(const string& inStr) {
 	}
 }
 
+// 方法三 最无脑的解法，直接将输入和输出结合起来
+void getAns() {
+	string str;
+	while (cin >> str) {
+		cout << str + ": " << str.size() << endl;
+	}
+}
+
 int main() {
+	/*getAns();*/
 	string inStr;
 	getline(cin, inStr);
 
