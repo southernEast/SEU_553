@@ -17,7 +17,7 @@ int main() {
 	cin >> m >> n;
 	int** a = new int* [m];
 	for (int i = 0; i < m; ++i)
-		a[i] = new int[n];			// 创建一个m*n的动态二维数组
+		a[i] = new int[n];			// 创建一个m*n的动态二维数组或使用动态一维数组表示二维
 
 	for (int i = 0; i < m; ++i) {
 		for (int j = 0; j < n; ++j)
@@ -34,7 +34,7 @@ int main() {
 
 	for (int i = 0; i < m; ++i)		// 先清除单个的一维再清除整个 
 		delete[] a[i];
-	delete a;
+	delete[] a;
 
 	return 0;
 }
