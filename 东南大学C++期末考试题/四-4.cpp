@@ -19,7 +19,7 @@ Node* insert(Node* head, Node* p) {
 		return head;
 	}
 	p2 = p1 = head;
-	while (p2->next && p2->data < p->data) {	// 注意这个要判断p2->next，因为后面还是有可能会访问到p2的数据成员
+	while (p2->next && p2->data < p->data) {	// 注意这个要判断p2->next，因为后面还是有可能会访问到p2下一个结点的数据成员
 		p1 = p2;
 		p2 = p2->next;
 	}
