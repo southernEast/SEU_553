@@ -34,9 +34,9 @@ int main() {
 				cnt[PUNCTUATION]++;
 				needJudge = true;
 			}
-			else if (isdigit((unsigned char)inBuf[i]))
+			else if (isdigit(inBuf[i]))
 				numberFlag = true;
-			else if (isalpha((unsigned char)inBuf[i]))
+			else if (isalpha(inBuf[i]))
 				alphaFlag = true;
 			else {
 				cnt[OTHERS]++;
