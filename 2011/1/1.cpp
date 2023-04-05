@@ -1,6 +1,6 @@
 ﻿#include <iostream>
 #include <iomanip>
-#include <cmath>
+#include <cmath>					//增加fabs头我呢见
 using namespace std;
 
 double myExp(double x) {
