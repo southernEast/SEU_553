@@ -17,6 +17,17 @@ void getPrime(vector<int>& prime) {
 	}
 }
 
+//改进的埃氏筛法: 要找到直到 n 为止的所有素数，仅对不超过 sqrt(n) 的素数进行筛选就足够了。
+vector<bool> is_prime(MAXN, true);
+void prime(int n) {
+    is_prime[0] = is_prime[1] = 0;
+    for (int i = 2; i * i <= n; ++i) {
+        if (is_prime[i])
+            for (int j = i * i; j <= n; j+=i)
+                is_prime[j] = false;
+    }
+}
+
 int main() {
 	vector<int> prime;
 	getPrime(prime);
