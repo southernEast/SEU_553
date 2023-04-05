@@ -15,9 +15,9 @@ mapStudent[456] = "student_second";
 iter = mapStudent.find("123");
  
 if(iter != mapStudent.end())
-       cout<<"Find, the value is"<<iter->second<<endl;
+    cout<<"Find, the value is"<<iter->second<<endl;
 else
-   cout<<"Do not Find"<<endl;
+    cout<<"Do not Find"<<endl;
 
 //迭代器刪除
 iter = mapStudent.find("123");
@@ -37,7 +37,7 @@ bool cmp (const pair<int,string> &a. const pair<int,string> &b) {
 sort(mapStudent.begin(),mapStudent.end(),cmp);
 
 for (auto i : mapStudent) {
-		cout << i.first << ' ' << i.second << endl;
+	cout << i.first << ' ' << i.second << endl;
 }
 
 map<int,string>::iterator i; //map的迭代器，参数根据实际情况修改
