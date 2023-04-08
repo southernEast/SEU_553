@@ -47,6 +47,7 @@ void findRepStr3(char str[], const char findStr[], const char replaceStr[]) {
     for (int i = (pos - str) + findLen; i < strLen; ++i)
         res[cnt++] = str[i];
     res[cnt] = '\0';
+
     cout << res << endl;
 }
 
