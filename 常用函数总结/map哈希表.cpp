@@ -37,7 +37,7 @@ bool cmp (const pair<int,string> &a. const pair<int,string> &b) {
 sort(mapStudent.begin(),mapStudent.end(),cmp);
 
 for (auto i : mapStudent) {
-	cout << i.first << ' ' << i.second << endl;
+    cout << i.first << ' ' << i.second << endl;
 }
 
 map<int,string>::iterator i; //map的迭代器，参数根据实际情况修改
