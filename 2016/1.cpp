@@ -1,5 +1,6 @@
 ﻿#include <iostream>
 #include <string>
+#include <cstring>	//strtok头文件
 using namespace std;
 
 // 方法一 使用string类的成员函数

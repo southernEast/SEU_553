@@ -1,5 +1,6 @@
 ﻿#include <iostream>
 #include <iomanip>
+#include <cmath>					//增加fabs头文件
 using namespace std;
 
 double myExp(double x) {

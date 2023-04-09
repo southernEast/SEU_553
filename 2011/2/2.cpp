@@ -1,5 +1,6 @@
 ﻿#include <iostream>
 #include <iomanip>
+#include <cmath>				//fabs头文件
 using namespace std;
 
 int main() {
