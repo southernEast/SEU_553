@@ -28,27 +28,27 @@ void findRepStr2(char str[], const char findStr[], const char replaceStr[]) {
 }
 // 解法三：不使用STL和string替换不同长度的字符串
 void findRepStr3(char str[], const char findStr[], const char replaceStr[]) {
-    int strLen = strlen(str);
-    int findLen = strlen(findStr);
-    int repLen = strlen(replaceStr);
-    int newLen = strLen - findLen + repLen + 1;
+	int strLen = strlen(str);
+	int findLen = strlen(findStr);
+	int repLen = strlen(replaceStr);
+	int newLen = strLen - findLen + repLen + 1;
 
-    char *pos = strstr(str, findStr);
-    char *res = new char[newLen];
+	char *pos = strstr(str, findStr);
+	char *res = new char[newLen];
 
 	//pos-str 为在替换字符串之前原字符串的长度
 	//(pos-str)+findLen 为在替换字符串之后原字符串的长度
 	//其实原理就是分三段拼接
-    int cnt = 0;
-    for (int i = 0; i < (pos - str); ++i)
-        res[cnt++] = str[i];
-    for (int i = 0; i < repLen; ++i)
-        res[cnt++] = replaceStr[i];
-    for (int i = (pos - str) + findLen; i < strLen; ++i)
-        res[cnt++] = str[i];
-    res[cnt] = '\0';
+	int cnt = 0;
+	for (int i = 0; i < (pos - str); ++i)
+		res[cnt++] = str[i];
+	for (int i = 0; i < repLen; ++i)
+		res[cnt++] = replaceStr[i];
+	for (int i = (pos - str) + findLen; i < strLen; ++i)
+		res[cnt++] = str[i];
+	res[cnt] = '\0';
 
-    cout << res << endl;
+	cout << res << endl;
 }
 
 int main() {
