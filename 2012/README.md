@@ -1,3 +1,75 @@
+# 一、简答题
+## 1. 编写语句说明枚举类型是如何定义和使用的。
+答：
+## 2. 程序改错
+### 第一题
+```C++
+#include <iostream>
+using namespace std;
+int main()
+{
+    for (int i = 0; i < 8; i++)
+    {
+        if (i % 2 == 0)
+            cout << i + 1 << endl;
+        if (i % 3 == 0)
+            continue;
+        if (i % 5 == 0)
+            break;
+        cout << "End of programming\n";
+    }
+    cout << "End of programming\n";
+    return 0;
+}
+```
+
+### 第二题
+```C++
+#include <iostream>
+using namespace std;
+
+int main()
+{
+    int c;
+    if ((c = cin.get()) != EOF) {
+        main();
+        cout << c;
+    }
+    return 0;
+}
+```
+
+### 第三题
+```C++
+#include <iostream>
+using namespace std;
+
+void fun(int a[], int cur, int s)
+{
+    {
+        if (cur < s)
+            fun(a, cur + 1, s);
+        cour << a[cur] << ',';
+    }
+}
+
+int main()
+{
+    int a[] = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10};
+    fun(a, 0, 10);
+    return 0;
+}
+```
+
+## 3. 函数模板和模板函数的区别。
+答：
+## 4. 为什么说“继承是面向对象的主要特征之一”？请简要说明。
+答：
+## 5. 如何声明和使用虚函数？说明它在多态性中的作用和意义。
+答：
+
+# 二、编程题
+
 ## [Problem 1](1/1.cpp)
 > 编写程序，求最小公倍数。
 ## [Problem 2](2/2.cpp)

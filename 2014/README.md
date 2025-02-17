@@ -1,3 +1,120 @@
+# 一、简答题
+## 1. 指出错误并改正
+```C++
+#include <iostream>
+using namespace std;
+
+void f(int *p) {
+    if (p) {
+        *p *= 100;
+        cout << *p << endl;
+    }
+}
+
+int main()
+{
+    int p = 10;
+    int * ptr;
+    f(ptr);
+    
+    return 0;
+}
+```
+
+## 2. 说出下面程序输出什么。
+题目不全
+```C++
+#include <iostream>
+using namespace std;
+
+int main()
+{
+    char str[] = "THIS IS PROGRAMMING.";
+    int length = 21;
+    int j = 0;
+    for (int k = 0; k < length; k++) {
+        if (str[j] < str[k])
+            j = k;
+    }
+    int temp = j;
+    str[j] = str[7];
+    str[7] = str[13];
+    str[13] = str[length];
+    cout << str << endl;
+
+    return 0;
+}
+```
+
+## 3. 程序输出结果
+```C++
+#include <iostream>
+using namespace std;
+
+void fun(int i, int j, int *a) {
+    *a = j - i;
+}
+
+int main()
+{
+    int a, b, c;
+    fun(20, 9, &a);
+    fun(9, a, &b);
+    fun(a, b, &c);
+    cout << a << "," << b << "," << c << endl;
+
+    return 0;
+}
+```
+
+## 4. 关于二维数组的，求矩阵的行之和与列之和。
+题目不全
+
+## 5. 下列程序输出什么？
+```C++
+#include <iostream>
+using namespace std;
+
+class A
+{
+public:
+    virtual void print() {
+        cout << "A::print" << endl;
+    }
+};
+
+class B: public A
+{
+public:
+    void print()
+    {
+        cout << "B::print" << endl;
+    }
+};
+
+class C: public B
+{
+public:
+    void print() {
+        cout << "C::print" << endl;
+    }
+};
+
+int main()
+{
+    B b;
+    C c;
+    A* a;
+    a = &c;
+    a->print();
+    a = &b;
+    a->print();
+
+    return 0;
+}
+```
+
+# 二、编程题
 ## [Problem 1](1/1.cpp)
 > 用递归编程。</br>
 > 要求如下：</br>
